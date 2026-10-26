@@ -4,8 +4,7 @@ const tg = window.Telegram?.WebApp
 function getHeaders() {
   return {
     'Content-Type': 'application/json',
-    'X-Init-Data': tg?.initData || 'test',
-    'X-App-Token': import.meta.env.VITE_APP_TOKEN || '',
+    'X-Init-Data': tg?.initData || '',
   }
 }
 
